@@ -1,0 +1,12 @@
+C:\Users\mikee\Source\Workspaces\LesGetsFinal\WpfEF.Toast\bin\Debug\WpfEF.Toast.dll
+C:\Users\mikee\Source\Workspaces\LesGetsFinal\WpfEF.Toast\bin\Debug\WpfEF.Toast.pdb
+C:\Users\mikee\Source\Workspaces\LesGetsFinal\WpfEF.Toast\obj\Debug\WpfEF.Toast.csprojResolveAssemblyReference.cache
+C:\Users\mikee\Source\Workspaces\LesGetsFinal\WpfEF.Toast\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\mikee\Source\Workspaces\LesGetsFinal\WpfEF.Toast\obj\Debug\WpfEF.Toast_MarkupCompile.cache
+C:\Users\mikee\Source\Workspaces\LesGetsFinal\WpfEF.Toast\obj\Debug\WpfEF.Toast_MarkupCompile.lref
+C:\Users\mikee\Source\Workspaces\LesGetsFinal\WpfEF.Toast\obj\Debug\Themes\Generic.baml
+C:\Users\mikee\Source\Workspaces\LesGetsFinal\WpfEF.Toast\obj\Debug\WpfEF.Toast.g.resources
+C:\Users\mikee\Source\Workspaces\LesGetsFinal\WpfEF.Toast\obj\Debug\WpfEF.Toast.Properties.Resources.resources
+C:\Users\mikee\Source\Workspaces\LesGetsFinal\WpfEF.Toast\obj\Debug\WpfEF.Toast.csproj.GenerateResource.Cache
+C:\Users\mikee\Source\Workspaces\LesGetsFinal\WpfEF.Toast\obj\Debug\WpfEF.Toast.dll
+C:\Users\mikee\Source\Workspaces\LesGetsFinal\WpfEF.Toast\obj\Debug\WpfEF.Toast.pdb
