@@ -10,6 +10,9 @@ Here's how to add this project to your solution:
 2. Add the `.csproj` to your solution.
 3. Rebuild the project.
 
+Alternatively, you could build the project on it's own and add a reference to the output DLL in 
+the `bin` folder from your solution.
+
 ## Code Examples
 
 To create a simple toast, use the following code:
@@ -26,6 +29,8 @@ ToastTypes type = ToastTypes.Info;
 Toaster toaster = new Toaster();
 toaster.Show(title, message, type);
 ```
+
+![Simple Toast](Documentation/Toast1.png)
 
 #### Toasting an Exception
 
@@ -46,6 +51,8 @@ catch (Exception ex)
     toaster.Show("Something Failed!", ex);
 }
 ```
+
+![Error Toast](Documentation/Toast2.png)
 
 #### Toast Within Bounds
 
@@ -71,6 +78,8 @@ into the `isPersistent` paramter:
 toaster.Show(title, message, type, isPersistent: true);
 ```
 
+![Success Toast](Documentation/Toast3.png)
+
 #### Display Toasts For Longer
 
 Toasts will be displayed for 5 seconds by default, if you want to extend this period you can pass in a `TimeSpan`
@@ -82,6 +91,8 @@ TimeSpan displayTime = new TimeSpan(10000);
 
 toaster.Show(title, message, type, displayTime);
 ```
+
+![Warning Toast](Documentation/Toast4.png)
 
 #### Mocking and Unit Testing
 
