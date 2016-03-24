@@ -30,7 +30,7 @@ Toaster toaster = new Toaster();
 toaster.Show(title, message, type);
 ```
 
-![Simple Toast](Documentation/Toast1.png)
+![Simple Toast](https://raw.githubusercontent.com/mike-eason/WPF_ToastNotifications/master/Documentation/Toast1.PNG)
 
 #### Toasting an Exception
 
@@ -52,7 +52,7 @@ catch (Exception ex)
 }
 ```
 
-![Error Toast](Documentation/Toast2.png)
+![Error Toast](https://raw.githubusercontent.com/mike-eason/WPF_ToastNotifications/master/Documentation/Toast2.PNG)
 
 #### Toast Within Bounds
 
@@ -78,7 +78,7 @@ into the `isPersistent` paramter:
 toaster.Show(title, message, type, isPersistent: true);
 ```
 
-![Success Toast](Documentation/Toast3.png)
+![Success Toast](https://raw.githubusercontent.com/mike-eason/WPF_ToastNotifications/master/Documentation/Toast3.PNG)
 
 #### Display Toasts For Longer
 
@@ -92,7 +92,7 @@ TimeSpan displayTime = new TimeSpan(10000);
 toaster.Show(title, message, type, displayTime);
 ```
 
-![Warning Toast](Documentation/Toast4.png)
+![Warning Toast](https://raw.githubusercontent.com/mike-eason/WPF_ToastNotifications/master/Documentation/Toast4.PNG)
 
 #### Mocking and Unit Testing
 
