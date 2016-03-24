@@ -1,0 +1,11 @@
+C:\Source\WPF_ToastNotifications\bin\Debug\Encore.UI.Toast.dll
+C:\Source\WPF_ToastNotifications\bin\Debug\Encore.UI.Toast.pdb
+C:\Source\WPF_ToastNotifications\obj\Debug\Encore.UI.Toast.csprojResolveAssemblyReference.cache
+C:\Source\WPF_ToastNotifications\obj\Debug\ToastNotification.baml
+C:\Source\WPF_ToastNotifications\obj\Debug\ToastNotificationHost.baml
+C:\Source\WPF_ToastNotifications\obj\Debug\ToastNotification.g.cs
+C:\Source\WPF_ToastNotifications\obj\Debug\ToastNotificationHost.g.cs
+C:\Source\WPF_ToastNotifications\obj\Debug\Encore.UI.Toast_MarkupCompile.cache
+C:\Source\WPF_ToastNotifications\obj\Debug\Encore.UI.Toast.g.resources
+C:\Source\WPF_ToastNotifications\obj\Debug\Encore.UI.Toast.dll
+C:\Source\WPF_ToastNotifications\obj\Debug\Encore.UI.Toast.pdb

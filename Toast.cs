@@ -1,44 +1,57 @@
 ﻿using System;
 using System.Windows.Threading;
 
-namespace ToastNotifications
+namespace Encore.UI.Toast
 {
     internal class Toast
     {
-        public DispatcherTimer Timer { get; private set; }
-        public ToastNotification Notification { get; private set; }
+        public event EventHandler<ToastNotification> OnToastClosing;
+
+        private DispatcherTimer _Timer;
+        private ToastNotification _Notification;
 
         public Toast(ToastNotification notification)
         {
-            Notification = notification;
-            Notification.AllowsTransparency = true;
-            Notification.WindowStyle = System.Windows.WindowStyle.None;
+            _Notification = notification;
+
+            notification.OnDismissClicked += notification_OnDismissClicked;
+        }
+
+        private void notification_OnDismissClicked(object sender, EventArgs e)
+        {
+            NotifyOnToastClosing();
         }
 
         private void Timer_Tick(object sender, EventArgs e)
         {
             //Stop and close the window.
-            Timer.Stop();
+            _Timer.Stop();
 
-            Notification.Close();
+            NotifyOnToastClosing();
         }
 
         public void Show(TimeSpan displayTime)
         {
-            //Set up the timer
-            Timer = new DispatcherTimer();
-            Timer.Interval = displayTime;
-            Timer.Tick += Timer_Tick;
+            //Only start the timer if the notification is not persistent.
+            if (!_Notification.IsPersistent)
+            {
+                //Set up the timer
+                _Timer = new DispatcherTimer();
+                _Timer.Interval = displayTime;
+                _Timer.Tick += Timer_Tick;
 
-            //Display the window
-            Notification.Show();
+                //Start the timer
+                _Timer.Start();
+            }
+        }
 
-            //Focus back to the other window if there is one present.
-            if (Notification.DisplayOrigin != null)
-                Notification.DisplayOrigin.Focus();
+        private void NotifyOnToastClosing()
+        {
+            //Unsubscribe from the on dismiss event first (to avoid memory leaks)
+            _Notification.OnDismissClicked -= notification_OnDismissClicked;
 
-            //Start the timer
-            Timer.Start();
+            if (OnToastClosing != null)
+                OnToastClosing(this, _Notification);
         }
     }
 }
