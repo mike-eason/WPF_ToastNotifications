@@ -2,7 +2,7 @@
 using System.Windows;
 using System.Windows.Controls;
 
-namespace Encore.UI.Toast
+namespace PeanutButter.Toast
 {
     /// <summary>
     /// Interaction logic for ToastNotification.xaml

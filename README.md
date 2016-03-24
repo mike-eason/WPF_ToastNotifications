@@ -8,7 +8,7 @@ This is a project which provides simple, beautiful toast notifications for WPF d
 
 Here's how to add this project to your solution:
 
-1. Download the project as a ZIP.
+1. Download and extract the project.
 2. Add the `.csproj` to your solution.
 3. Rebuild the project.
 
@@ -74,7 +74,7 @@ toaster.Show(title, message, type, windowBounds);
 #### Persistent Toasts
 
 Sometimes you might want your toast to stick around until the user manually closes it. You can pass in `true`
-into the `isPersistent` paramter:
+into the `isPersistent` parameter:
 
 ```
 toaster.Show(title, message, type, isPersistent: true);
@@ -85,7 +85,7 @@ toaster.Show(title, message, type, isPersistent: true);
 #### Display Toasts For Longer
 
 Toasts will be displayed for 5 seconds by default, if you want to extend this period you can pass in a `TimeSpan`
-into the `displayTime` paramter:
+into the `displayTime` parameter:
 
 ```
 //10 seconds

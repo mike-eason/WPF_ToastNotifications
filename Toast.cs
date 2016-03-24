@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Windows.Threading;
 
-namespace Encore.UI.Toast
+namespace PeanutButter.Toast
 {
     internal class Toast
     {

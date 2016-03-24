@@ -4,11 +4,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("Encore.UI.Toast")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyTitle("PeanutButter.Toast")]
+[assembly: AssemblyDescription("A small framework for displaying simple, beautiful toast notifications in WPF.")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("Encore.UI.Toast")]
+[assembly: AssemblyProduct("PeanutButter.Toast")]
 [assembly: AssemblyCopyright("Copyright ©  2015")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]

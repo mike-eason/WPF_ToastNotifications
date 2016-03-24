@@ -3,7 +3,7 @@ using System.Collections.ObjectModel;
 using System.Windows;
 using System.Windows.Media.Animation;
 
-namespace Encore.UI.Toast
+namespace PeanutButter.Toast
 {
     /// <summary>
     /// Interaction logic for ToastNotificationHost.xaml

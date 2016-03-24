@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
 
-namespace Encore.UI.Toast
+namespace PeanutButter.Toast
 {
     public enum ToastTypes
     {

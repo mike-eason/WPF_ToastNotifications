@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Windows;
 
-namespace Encore.UI.Toast
+namespace PeanutButter.Toast
 {
     public class Toaster : IToaster
     {
