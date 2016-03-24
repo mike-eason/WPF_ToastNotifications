@@ -2,6 +2,8 @@
 
 This is a project which provides simple, beautiful toast notifications for WPF desktop applications.
 
+[![Hello Toast](https://i.gyazo.com/7553a0bda0743cfd10aad83fa6c4055d.gif)](https://gyazo.com/7553a0bda0743cfd10aad83fa6c4055d)
+
 #### Getting Started
 
 Here's how to add this project to your solution:
