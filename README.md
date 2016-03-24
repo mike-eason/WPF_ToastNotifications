@@ -83,6 +83,27 @@ TimeSpan displayTime = new TimeSpan(10000);
 toaster.Show(title, message, type, displayTime);
 ```
 
+#### Mocking and Unit Testing
+
+For unit testing, I recommend that you first ensure that any `Toaster` objects are added to your classes using
+`dependency injection`, this will prevent any real toasts from being displayed inside unit tests.
+
+```
+private IToaster _toaster;
+
+public MyClass(IToaster toaster)
+{
+    _toaster = toaster;   
+}
+```
+
+The method of `dependency injection` is up to you, however this will allow you to make use of the interface `IToaster` 
+which can be mocked. For example using the `NSubstitute` framework.
+
+```
+IToaster toaster = Substitute.For<IToaster>();
+```
+
 ## License
 
 MIT License

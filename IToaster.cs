@@ -14,7 +14,7 @@ namespace Encore.UI.Toast
         Warning,
         Info
     }
-    
+
     public interface IToaster
     {
         /// <summary>
@@ -24,6 +24,19 @@ namespace Encore.UI.Toast
         /// <param name="parentContainer">The container to display the toast within. Leave this as null to use the primary monitor.</param>
         /// <param name="isPersistent">If true, the toast will remain visible until the user closes it.</param>
         void Show(
+            Exception error,
+            Rect? parentContainer = null,
+            bool isPersistent = false);
+
+        /// <summary>
+        /// Show an error toast notification for 5 seconds.
+        /// </summary>
+        /// <param name="title">The title of the toast.</param>
+        /// <param name="error">The error to display. The content will be the Message property on the exception.</param>
+        /// <param name="parentContainer">The container to display the toast within. Leave this as null to use the primary monitor.</param>
+        /// <param name="isPersistent">If true, the toast will remain visible until the user closes it.</param>
+        void Show(
+            string title,
             Exception error,
             Rect? parentContainer = null,
             bool isPersistent = false);

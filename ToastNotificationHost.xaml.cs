@@ -19,7 +19,7 @@ namespace Encore.UI.Toast
         // Using a DependencyProperty as the backing store for Toasts.  This enables animation, styling, binding, etc...
         public static readonly DependencyProperty ToastsProperty =
             DependencyProperty.Register("Toasts", typeof(ObservableCollection<ToastNotification>), typeof(ToastNotificationHost), new PropertyMetadata(new ObservableCollection<ToastNotification>()));
-        
+
         public Rect? DisplayOrigin
         {
             get { return (Rect?)GetValue(DisplayOriginProperty); }
@@ -46,7 +46,7 @@ namespace Encore.UI.Toast
                 area = (Rect)DisplayOrigin;
             else
                 area = System.Windows.SystemParameters.WorkArea;
-            
+
             //Display the toast at the top right of the area.
             this.Left = area.Right - this.Width - offset;
             this.Top = area.Top + offset;

@@ -17,6 +17,15 @@ namespace Encore.UI.Toast
 
         public void Show(
             string title,
+            Exception error,
+            Rect? parentContainer = null,
+            bool isPersistent = false)
+        {
+            Show(title, error.Message, parentContainer, isPersistent);
+        }
+
+        public void Show(
+            string title,
             string message,
             Rect? parentContainer = null,
             bool isPersistent = false)
