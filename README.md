@@ -20,7 +20,7 @@ the `bin` folder from your solution.
 To create a simple toast, use the following code:
 
 ```
-using PeanutButter;
+using PeanutButter.Toast;
 
 ...
 
