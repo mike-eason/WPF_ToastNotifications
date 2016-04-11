@@ -96,7 +96,28 @@ toaster.Show(title, message, type, displayTime);
 
 ![Warning Toast](https://raw.githubusercontent.com/mike-eason/WPF_ToastNotifications/master/Documentation/Toast4.PNG)
 
-#### Mocking and Unit Testing
+#### Changing The Toast Template
+
+The toast can be restyled using the standard WPF style overriding:
+
+```
+xmlns:toast="clr-namespace:PeanutButter.Toast;assembly=PeanutButter.Toast"
+
+...
+
+<Style TargetType="{x:Type toast:ToastNotification}" BasedOn="{StaticResource {x:Type toast:ToastNotification}}">
+   <Setter Property="FontFamily" Value="Consolas"/>
+   ...
+</Style>
+```
+
+Here is the result:
+
+![New Toast Style](https://raw.githubusercontent.com/mike-eason/WPF_ToastNotifications/master/Documentation/Toast5.PNG)
+
+When overriding the `Template`, there is a named `Button` called `PART_DismissButton`. This is optional however if present, the `Click` event will automatically be registered.
+
+## Mocking and Unit Testing
 
 For unit testing, I recommend that you first ensure that any `Toaster` objects are added to your classes using
 `dependency injection`, this will prevent any real toasts from being displayed inside unit tests.

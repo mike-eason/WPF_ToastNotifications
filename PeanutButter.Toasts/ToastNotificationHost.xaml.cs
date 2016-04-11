@@ -15,8 +15,7 @@ namespace PeanutButter.Toast
             get { return (ObservableCollection<ToastNotification>)GetValue(ToastsProperty); }
             set { SetValue(ToastsProperty, value); }
         }
-
-        // Using a DependencyProperty as the backing store for Toasts.  This enables animation, styling, binding, etc...
+        
         public static readonly DependencyProperty ToastsProperty =
             DependencyProperty.Register("Toasts", typeof(ObservableCollection<ToastNotification>), typeof(ToastNotificationHost), new PropertyMetadata(new ObservableCollection<ToastNotification>()));
 
@@ -60,7 +59,7 @@ namespace PeanutButter.Toast
             this.Loaded += ToastNotification_Loaded;
         }
 
-        void ToastNotificationHost_Closing(object sender, System.ComponentModel.CancelEventArgs e)
+        private void ToastNotificationHost_Closing(object sender, System.ComponentModel.CancelEventArgs e)
         {
             Closing -= ToastNotificationHost_Closing;
             e.Cancel = true;
@@ -69,7 +68,7 @@ namespace PeanutButter.Toast
             this.BeginAnimation(UIElement.OpacityProperty, anim);
         }
 
-        void ToastNotification_Loaded(object sender, RoutedEventArgs e)
+        private void ToastNotification_Loaded(object sender, RoutedEventArgs e)
         {
             Reposition();
         }

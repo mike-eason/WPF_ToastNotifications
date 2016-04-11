@@ -5,6 +5,8 @@ namespace PeanutButter.Toast
 {
     public class Toaster : IToaster
     {
+        private const string _DEFAULT_TITLE = "Operation Failed";
+
         private ToastNotificationHost _HOST;
 
         public void Show(
@@ -12,7 +14,7 @@ namespace PeanutButter.Toast
             Rect? parentContainer = null,
             bool isPersistent = false)
         {
-            Show("Operation Failed", error.Message, parentContainer, isPersistent);
+            Show(_DEFAULT_TITLE, error.Message, parentContainer, isPersistent);
         }
 
         public void Show(
@@ -65,7 +67,7 @@ namespace PeanutButter.Toast
 
             //Create a toast and accompanying dispatcher timer.
             Toast toast = new Toast(notification);
-            toast.OnToastClosing += Toast_OnToastClosing;
+            toast.ToastClosing += Toast_ToastClosing;
 
             //Add the toast to the host window
             _HOST.Toasts.Add(notification);
@@ -89,9 +91,7 @@ namespace PeanutButter.Toast
             }
             //Otherwise, set it's display location and origin.
             else
-            {
                 _HOST.DisplayOrigin = container;
-            }
 
             _HOST.Reposition();
 
@@ -100,7 +100,7 @@ namespace PeanutButter.Toast
                 _HOST.Visibility = Visibility.Visible;
         }
 
-        private void Toast_OnToastClosing(object sender, ToastNotification e)
+        private void Toast_ToastClosing(object sender, ToastNotification e)
         {
             //Remove the toast from the host window
             _HOST.Toasts.Remove(e);

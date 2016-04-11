@@ -1,0 +1,63 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PeanutButter.Toast.Demo", "..\PeanutButter.Toast.Demo\PeanutButter.Toast.Demo.csproj", "{65A57511-30F1-472A-8D28-52A67CEF6766}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PeanutButter.Toast", "PeanutButter.Toasts\PeanutButter.Toast.csproj", "{B871F316-8338-4B69-90A2-B0E3259F0E58}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		LocalIIS_Richard|Any CPU = LocalIIS_Richard|Any CPU
+		Release|Any CPU = Release|Any CPU
+		ReleaseDebug|Any CPU = ReleaseDebug|Any CPU
+		ReleaseShoreham|Any CPU = ReleaseShoreham|Any CPU
+		Slinfold|Any CPU = Slinfold|Any CPU
+		Test|Any CPU = Test|Any CPU
+		WPF_Release|Any CPU = WPF_Release|Any CPU
+		WPF|Any CPU = WPF|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{65A57511-30F1-472A-8D28-52A67CEF6766}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{65A57511-30F1-472A-8D28-52A67CEF6766}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{65A57511-30F1-472A-8D28-52A67CEF6766}.LocalIIS_Richard|Any CPU.ActiveCfg = Release|Any CPU
+		{65A57511-30F1-472A-8D28-52A67CEF6766}.LocalIIS_Richard|Any CPU.Build.0 = Release|Any CPU
+		{65A57511-30F1-472A-8D28-52A67CEF6766}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{65A57511-30F1-472A-8D28-52A67CEF6766}.Release|Any CPU.Build.0 = Release|Any CPU
+		{65A57511-30F1-472A-8D28-52A67CEF6766}.ReleaseDebug|Any CPU.ActiveCfg = Release|Any CPU
+		{65A57511-30F1-472A-8D28-52A67CEF6766}.ReleaseDebug|Any CPU.Build.0 = Release|Any CPU
+		{65A57511-30F1-472A-8D28-52A67CEF6766}.ReleaseShoreham|Any CPU.ActiveCfg = Release|Any CPU
+		{65A57511-30F1-472A-8D28-52A67CEF6766}.ReleaseShoreham|Any CPU.Build.0 = Release|Any CPU
+		{65A57511-30F1-472A-8D28-52A67CEF6766}.Slinfold|Any CPU.ActiveCfg = Release|Any CPU
+		{65A57511-30F1-472A-8D28-52A67CEF6766}.Slinfold|Any CPU.Build.0 = Release|Any CPU
+		{65A57511-30F1-472A-8D28-52A67CEF6766}.Test|Any CPU.ActiveCfg = Release|Any CPU
+		{65A57511-30F1-472A-8D28-52A67CEF6766}.Test|Any CPU.Build.0 = Release|Any CPU
+		{65A57511-30F1-472A-8D28-52A67CEF6766}.WPF_Release|Any CPU.ActiveCfg = Release|Any CPU
+		{65A57511-30F1-472A-8D28-52A67CEF6766}.WPF_Release|Any CPU.Build.0 = Release|Any CPU
+		{65A57511-30F1-472A-8D28-52A67CEF6766}.WPF|Any CPU.ActiveCfg = Release|Any CPU
+		{65A57511-30F1-472A-8D28-52A67CEF6766}.WPF|Any CPU.Build.0 = Release|Any CPU
+		{B871F316-8338-4B69-90A2-B0E3259F0E58}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B871F316-8338-4B69-90A2-B0E3259F0E58}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B871F316-8338-4B69-90A2-B0E3259F0E58}.LocalIIS_Richard|Any CPU.ActiveCfg = Release|Any CPU
+		{B871F316-8338-4B69-90A2-B0E3259F0E58}.LocalIIS_Richard|Any CPU.Build.0 = Release|Any CPU
+		{B871F316-8338-4B69-90A2-B0E3259F0E58}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B871F316-8338-4B69-90A2-B0E3259F0E58}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B871F316-8338-4B69-90A2-B0E3259F0E58}.ReleaseDebug|Any CPU.ActiveCfg = Release|Any CPU
+		{B871F316-8338-4B69-90A2-B0E3259F0E58}.ReleaseDebug|Any CPU.Build.0 = Release|Any CPU
+		{B871F316-8338-4B69-90A2-B0E3259F0E58}.ReleaseShoreham|Any CPU.ActiveCfg = Release|Any CPU
+		{B871F316-8338-4B69-90A2-B0E3259F0E58}.ReleaseShoreham|Any CPU.Build.0 = Release|Any CPU
+		{B871F316-8338-4B69-90A2-B0E3259F0E58}.Slinfold|Any CPU.ActiveCfg = Release|Any CPU
+		{B871F316-8338-4B69-90A2-B0E3259F0E58}.Slinfold|Any CPU.Build.0 = Release|Any CPU
+		{B871F316-8338-4B69-90A2-B0E3259F0E58}.Test|Any CPU.ActiveCfg = Release|Any CPU
+		{B871F316-8338-4B69-90A2-B0E3259F0E58}.Test|Any CPU.Build.0 = Release|Any CPU
+		{B871F316-8338-4B69-90A2-B0E3259F0E58}.WPF_Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B871F316-8338-4B69-90A2-B0E3259F0E58}.WPF_Release|Any CPU.Build.0 = Release|Any CPU
+		{B871F316-8338-4B69-90A2-B0E3259F0E58}.WPF|Any CPU.ActiveCfg = Release|Any CPU
+		{B871F316-8338-4B69-90A2-B0E3259F0E58}.WPF|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

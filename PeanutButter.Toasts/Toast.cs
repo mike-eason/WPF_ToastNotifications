@@ -5,7 +5,7 @@ namespace PeanutButter.Toast
 {
     internal class Toast
     {
-        public event EventHandler<ToastNotification> OnToastClosing;
+        public event EventHandler<ToastNotification> ToastClosing;
 
         private DispatcherTimer _Timer;
         private ToastNotification _Notification;
@@ -14,12 +14,12 @@ namespace PeanutButter.Toast
         {
             _Notification = notification;
 
-            notification.OnDismissClicked += notification_OnDismissClicked;
+            _Notification.Dismissed += Notification_Dismissed;
         }
 
-        private void notification_OnDismissClicked(object sender, EventArgs e)
+        private void Notification_Dismissed(object sender, EventArgs e)
         {
-            NotifyOnToastClosing();
+            OnToastClosing();
         }
 
         private void Timer_Tick(object sender, EventArgs e)
@@ -27,7 +27,7 @@ namespace PeanutButter.Toast
             //Stop and close the window.
             _Timer.Stop();
 
-            NotifyOnToastClosing();
+            OnToastClosing();
         }
 
         public void Show(TimeSpan displayTime)
@@ -45,13 +45,15 @@ namespace PeanutButter.Toast
             }
         }
 
-        private void NotifyOnToastClosing()
+        protected void OnToastClosing()
         {
             //Unsubscribe from the on dismiss event first (to avoid memory leaks)
-            _Notification.OnDismissClicked -= notification_OnDismissClicked;
+            _Notification.Dismissed -= Notification_Dismissed;
 
-            if (OnToastClosing != null)
-                OnToastClosing(this, _Notification);
+            var eh = ToastClosing;
+
+            if (eh != null)
+                eh(this, _Notification);
         }
     }
 }
